@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center; 
+}
+
+nav > p {
+  margin: 20px 10px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  width: 20%;
+  padding: 5px 0;
+  display: block;
+  margin: 20px auto;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  color: #806c6c;
+  border-radius: 0;
+  border: none;
+  padding: 10px 20px;
+}
+
+.App {
+  text-align: center;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.hero-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://assets.codepen.io/6060109/agency-hero-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  color: white;
+  position: relative;
+}
+
+.hero-section > h2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 60px;
+}
+
+.services-section {
+  height: 600px;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.services-section > h2 {
+  color: #133588;
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.service-block {
+  margin: 0 10px;
+  width: 20%;
+}
+
+.service-block img {
+  width: 100%;
+}
+
+.service-block > p {
+  margin: 0;
+  text-align: left;
+  color: #806c6c;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.footer-section {
+  background-color: #133588;
+  height: 300px;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.footer-section > h2 {
+  color: white;
+  width: 50%;
+  margin: auto;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav > p {
+    font-size: 12px;
+  }
+  
+  .hero-section {
+    height: 350px;
+  }
+  
+  .hero-section > h2 {
+    font-size: 20px;
+  }
+
+  .services-section {
+    height: auto;
+  }
+
+  .services-section > h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .services-container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .service-block {
+    width: 70%;
+    padding: 20px 0;
+  }
+
+  .service-block > p {
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  .footer-section {
+    height: 400px;
+  }
+
+  .footer-section > h2 {
+    font-size: 20px;
+  }
+}
